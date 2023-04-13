@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City ~ Weather App</title>
+
+
+    <link rel="stylesheet" href="src/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>City ~ Weather</h1>
+    <h2>Welcome to your favourite City ~ Weather App</h2>
+    <h3>You want to know the weather in a specific city? <br> No worries! I got you</h3>
+
+    <!-- Part for getting data from the user -->
+    <label for="city">Enter the Name of a City:</label> <br><br>
+        <input type="text" id="city" name="city" autofocus> <br><br>
+    <button onclick="getWeather()" type="button" class="btn btn-secondary btn-lg">Get Weather</button>
+
+    <!-- Now we display the data we get from our fetch here -->
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+    <script src="src/bootstrap.js"></script>
+</body>
+
+</html>
